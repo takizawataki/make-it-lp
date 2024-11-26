@@ -1,0 +1,355 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #f7f7f7; /* 背景色を柔らかいグレーに */
+  color: #333333; /* テキスト色をダークグレーに */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #ffffff; /* 背景色を白に */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  white-space: nowrap;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #341902; /* ロゴの色を茶色に */
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  background-image: url("img-ex.png"); /* 背景画像を追加 */
+  background-size: 89%; /* 背景画像を75％に縮小 */
+  background-repeat: no-repeat; /* 背景画像の繰り返しを無効に */
+  background-position: center; /* 背景画像の位置を中央に設定 */
+  padding: 10px; /* パディングを追加して背景画像が見えるように */
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-right: 30px;
+}
+.auth-buttons .sign-up {
+  margin-right: 30px; /* 右側に20pxの余白を追加 */
+}
+
+
+.auth-buttons button {
+  background-color: #ffd700; /* ボタンの背景色を柔らかい黄色に */
+  color: #333333; /* ボタンのテキスト色をダークグレーに */
+  border: none;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  background-color: #ffcc00; /* ホバー時の色を柔らかい黄色に */
+}
+
+.auth-buttons button:active {
+  background-color: #FF5E4D; /* 押したときの色を元の色に近い黄色に */
+}
+
+.main-content {
+  padding: 150px 20px;
+  text-align: center;
+  background-image: url("image1.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; /* テキスト色を白に */
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.main-content h1 {
+  font-size: calc(2rem + 1vw); /* スマホとPCの両方に対応する動的なサイズ */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main-content p {
+  font-size: calc(1rem + 0.5vw); /* スマホでは小さく、PCでは少し大きめに */
+  margin: 20px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.action-buttons button {
+  font-size: 18px;
+  background-color: #ffd700; /* ボタンの背景色を柔らかい黄色に */
+  color: #333333; /* ボタンのテキスト色をダークグレーに */
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #ffcc00; /* ホバー時の色を柔らかい黄色に */
+  color: #ffffff;
+}
+
+.action-buttons button:active {
+  background-color: #FF5E4D; /* 押したときの色を元の色に近い黄色に */
+}
+
+.sub-section {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #ffffff; /* 背景色を白に */
+  border-top: 5px solid #ffffff; /* ボーダー色を柔らかい黄色に */
+  text-align: center;
+  flex-direction: row;
+}
+
+.sub-image {
+  width: 30%;
+  height: auto;
+  margin: 20px auto;
+  display: block; /* ブロック要素にして中央寄せ */
+  align-items: center;
+}
+
+.sub-content {
+  width: 40%;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-section h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333333; /* テキスト色をダークグレーに */
+}
+
+footer {
+  background-color: #ffd700; /* 背景色を柔らかい黄色に */
+  color: #333333; /* テキスト色をダークグレーに */
+  font-size: 16px;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 5px solid #ffd700; /* ボーダー色を柔らかい黄色に */
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: #333333; /* リンク色をダークグレーに */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #ffcc00; /* ホバー時の色を柔らかい黄色に */
+}
+
+ul li {
+  width: 80%; /* スマホ表示時の幅を制限 */
+  text-align: left; /* リンクを中央揃え */
+  margin: 10px 0; /* スマホでは縦に余白を追加 */
+  font-size: 20px; /* スマホではフォントサイズを小さめに調整 */
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    flex-direction: column; /* スマホでは縦並びに */
+    align-items: center;
+  }
+
+  ul li {
+    width: 80%; /* スマホ表示時の幅を制限 */
+    text-align: left; /* リンクを中央揃え */
+    margin: 10px 0; /* スマホでは縦に余白を追加 */
+    font-size: 16px; /* スマホではフォントサイズを小さめに調整 */
+  }
+
+  /* レイアウトが縦並びになるように調整 */
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* ヘッダーの調整 */
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .auth-buttons button {
+    width: 80%;
+    margin: 10px auto; /* ボタンを中央揃えにする */
+    margin-top: 10px;
+  }
+
+  /* メインコンテンツのフォントサイズと余白を調整 */
+  .main-content h1 {
+    margin-top: 60px; /* 文字上に40pxの余白を追加 */
+    font-size: 40px;
+  }
+
+  .main-content p {
+    font-size: 22px;
+  }
+
+  .sub-section h2 {
+    font-size: 30px; /* スマホ表示時の本文サイズ */
+  }
+
+  .action-buttons button {
+    width: auto; /* ボタンの幅を自動にしてコンテンツに合わせる */
+    margin: 10px; /* ボタンの間に余白を追加 */
+  }
+
+   /* 背景画像をスマホで最適化 */
+  .main-content {
+    padding: 80px 20px;
+    background-size: cover;
+    background-position: top center;
+  }
+
+  .auth-buttons {
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%; /* 幅を親要素に合わせる */
+    margin-top: 10px; /* 上に少し余白を追加 */
+  }
+
+  .auth-buttons .sign-in {
+    margin-left: 30px; /* 右側に20pxの余白を追加 */
+    margin-right: 30px; /* 右側に20pxの余白を追加 */
+  }
+
+  .auth-buttons .sign-up {
+    margin-right: 30px; /* 右側に20pxの余白を追加 */
+  }
+
+  .sub-section {
+    flex-direction: column;
+    text-align: center; /* テキストを中央揃え */
+  }
+
+  .sub-content, .sub-image {
+    width: 100%;
+    margin: 20px auto; /* 上下に余白を確保 */
+    text-align: center;
+  }
+
+  .sub-image {
+    width: 90%; /* 画面幅に合わせて画像サイズを縮小 */
+    margin: 20px auto; /* 余白を均等にする */
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sub-section img {
+    max-width: 80%; /* 画像の最大幅を制限する */
+  }
+}
+
+.sub-section {
+  padding: 20px;
+}
+
+.sub-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.col {
+  flex: 1;
+  margin: 0 10px;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+  padding: 10vw 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 18px;
+}
